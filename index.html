@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> NNG AND CO </title>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <form id="mainForm" action="./mainDoc.htm" method="post">
+                <div id="header" class="align-center">
+                    <h2 > N N G & CO </h2>
+                    <p> God Godown Sreet, 49 Digvijay Plot, Udhyognagar, Jamnagar 361004 </p>
+                    <p> Mob: 9924237374  </p>
+                    <p> GSTIN: 24AAGFN8162J2Z0</p>
+                </div>
+                <br>
+                <div id="textInvoice" class="align-center font-weight-700 font-size-20">
+                    <hr>
+                    <p> Tax Invoice </p>
+                    <hr>
+                </div>
+                <div id="mid-1-table" class=""> 
+                    <div id="left-mid-1" class="width_30">
+                        <div>
+                            <label> Invoice No: </label>
+                            <input id="invoiceNoInp" name="invoiceNoInp"  required> 
+                        </div>
+                        <div class="">
+                            <label> Invoice Date: </label>
+                            <input id="invoicDateInp" name="invoicDateInp" type="date" required>
+                        </div>
+                        <div class="" >
+                            <label class=""> 
+                                Reverse charge (Y/N)</label>
+                            <input id="reverselChargeInp" name="reverselChargeInp" value="" required>
+                        </div>
+                        <div class="" >
+                            <label class=""> 
+                                State:
+                            </label>
+                            <input id="stateInp" name="stateInp" value="" class="" required>
+                        </div>
+                    </div>
+                    <div id="right-mid-1" class="width_30">
+                        <div>
+                            <label> Transport Mode: </label>
+                            <input id="transportModeInp" name="transportModeInp"> 
+                        </div>
+                        <div class="">
+                            <label> LR number: </label>
+                            <input id="lrNoInp" name="lrNoInp">
+                        </div>
+                        <div class="" >
+                            <label class=""> Date of Supply: </label>
+                            <input id="dateOfSupplyInp" name="dateOfSupplyInp" value="" type="date">
+                        </div>
+                        <div class="" >
+                            <label class=""> Place of Supply: </label>
+                            <input id="placeOfSupplyInp" name="placeOfSupplyInp" value="" class="" required>
+                        </div>
+                    </div>
+                </div>
+                     
+                
+                <hr class="endHr">
+                <div id="mid-2-table">
+                    <div id="left-mid-1" class="width_30">
+                        <div class="font-weight-700 font-size-20 mg-top-btm" >
+                            Bill To Party
+                        </div>
+                        <div>
+                            <label> Name: </label>
+                            <input id="billtoPartyNameInp" name="billtoPartyNameInp"> 
+                        </div>
+                        <div class="">
+                            <label> Address: </label>
+                            <input id="billtoPartyAddressInp" name="billtoPartyAddressInp">
+                        </div>
+                        <div class="" >
+                            <label class=""> GSTIN </label>
+                            <input id="billtoPartyGstInp" name="billtoPartyGstInp" value="">
+                        </div>
+                        <div class="" >
+                            <label class=""> State: </label>
+                            <input id="billtoPartyStateInp" name="billtoPartyStateInp" value="" class="">
+                        </div>
+                        <div class="" >
+                            <label class=""> Code: </label>
+                            <input id="billtoPartyCodeInp" name="billtoPartyCodeInp" value="" class="">
+                        </div>
+                    </div>
+                    <div id="left-mid-2" class="width_30">
+                        <div class="font-weight-700 font-size-20 mg-top-btm" >
+                            Ship To Party
+                        </div>
+                        <div>
+                            <label> Name: </label>
+                            <input id="shiptoPartyNameInp" name="shiptoPartyNameInp"> 
+                        </div>
+                        <div class="">
+                            <label> Address: </label>
+                            <input id="shiptoPartyAddressInp" name="shiptoPartyAddressInp">
+                        </div>
+                        <div class="" >
+                            <label class=""> GSTIN </label>
+                            <input id="shiptoPartyGstInp" name="shiptoPartyGstInp" value="">
+                        </div>
+                        <div class="" >
+                            <label class=""> State: </label>
+                            <input id="shiptoPartyStateInp" name="shiptoPartyStateInp" value="" class="">
+                        </div>
+                        <div class="" >
+                            <label class=""> Code: </label>
+                            <input id="shiptoPartyCodeInp" name="shiptoPartyCodeInp" value="" class="">
+                        </div>
+                    </div>
+                </div>
+                <hr class="endHr">
+                <div id="inputTableLableContainer" class="align-center">
+                    <label class="display-inline-block width_25"  > Product Description </label>
+                    <label class="display-inline-block width_10"> HSN Code </label>
+                    <label class="display-inline-block width_10" > UOM </label>
+                    <label class="display-inline-block width_10"> Qty </label>
+                    <label class="display-inline-block width_10"> Rate </label>
+                    <!-- <label class="display-inline-block width_15"> Taxable Value </label> -->
+                    <label class="display-inline-block" style="width: 7%;"> </label>
+                </div>
+            </form>
+            <br>
+            <div id="frm" >
+
+                <!-- <form id="fm1" class="flex-display mg-top-btm align-center">
+                    <div id="pr1" class="width_30">
+                        <input id="pr1_1" name="pr1_1"  required> 
+                        <input id="pr1_2" name="pr1_2">
+                    </div>
+                    <input class="display-inline-block width_10" id="hsn1"  required>
+                    <input class="display-inline-block width_10" id="uom1"  required>
+                    <input class="display-inline-block width_10" id="qty1"  type="number" required>
+                    <input class="display-inline-block width_10" id="rate1" type="number" required>
+        
+                    <input type="submit" class="display-inline-block width_15" style="margin: 0 1%;" form="fm1">
+                </form> -->
+
+
+                <form id="inputForm" class="mg-top-btm align-center"> 
+                    <div id="pr1" class="width_25">
+                        <input id="pr1_1" name="pr1_1"  required> 
+                        <input id="pr1_2" name="pr1_2">
+                    </div>
+                    <input class="width_10 display-inline-block" id="hsn1"  required>
+                    <input class="width_10 display-inline-block" id="uom1"  required>
+                    <input class="display-inline-block width_10" id="qty1"  type="number" required>
+                    <input class="display-inline-block width_10" id="rate1" type="number" required>
+                    <button type="submit" form="inputForm" class="width_10  display-inline-block" style="margin: 0 1%;" id="addBtn" onclick="addInvoiceItem()"> Add </button>
+                    <!-- <label class="display-inline-block" style="width: 7%;"> </label> -->
+                </form>
+            </div>
+            <!-- <div id="frm">
+
+                <form id="fm1" class="flex-display mg-top-btm align-center">
+                    <div id="pr1" class="width_30">
+                        <input id="pr1_1" name="pr1_1"  required> 
+                        <input id="pr1_2" name="pr1_2">
+                    </div>
+                    <input class="display-inline-block width_10" id="hsn1"  required>
+                    <input class="display-inline-block width_10" id="uom1"  required>
+                    <input class="display-inline-block width_10" id="qty1"  type="number" required>
+                    <input class="display-inline-block width_10" id="rate1" type="number" required>
+        
+                    <input type="submit" class="display-inline-block width_15" style="margin: 0 1%;" form="fm1">
+                </form>
+            </div> -->
+
+            <hr class="endHr" >
+        </div>
+
+        <!-- <form id="fm1" class="flex-display mg-top-btm align-center">
+            <div id="pr1" class="width_30">
+                <input id="pr1_1" name="pr1_1"  required> 
+                <input id="pr1_2" name="pr1_2">
+            </div>
+            <input class="display-inline-block width_10" id="hsn1"  required>
+            <input class="display-inline-block width_10" id="uom1"  required>
+            <input class="display-inline-block width_10" id="qty1"  type="number" required>
+            <input class="display-inline-block width_10" id="rate1" type="number" required>
+
+            <input type="submit" class="display-inline-block width_15" style="margin: 0 1%;" form="fm1">
+        </form> -->
+        
+        
+        
+        <table id="itemTable" style="width: 100%; border: 1px solid black"> 
+            <tr>
+                <th class="width_5"> Sr No. </th>
+                <th class="width_30"> Product Description </th>
+                <th class="width_10"> HSN Code </th>
+                <th class="width_10"> UOM </th>
+                <th class="width_10"> Qty </th>
+                <th class="width_10"> Rate </th>
+                <th class="width_15"> Taxable Value </th>
+                <th class="width_10"> Action </th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        
+        <div id="endTable">
+            <!-- <div id="end-left-table">
+                <div>
+                    <label> Total Invoice amount in words </label> <br><br>
+                    <label id="amountinWord"> "AMOUNT IN WORD" </label> 
+                </div>
+            </div> -->
+            <!-- <div id="end-right-table" > -->
+                <table id="taxTable">   
+                    <tr>
+                        <td colspan="2" class="margin-15">  Total Amount before Tax  </td>
+                        <td style="width: 200px;" > <label id="amountbeforeTax"  > 0.00 </label>  </td>
+                    </tr>
+                    <tr>
+                        <td  > Add: SGST </td>
+                        <td > 9.00 % </td>
+                        <td> <label id="sgst"> 0.00 </label></td>
+                    </tr>
+                    <tr>
+                        <td> Add: CGST </td>
+                        <td> 9.00 % </td>
+                        <td> <lable id="cgst"> 0.00 </lable></td>
+                    </tr>
+                    <tr>
+                        <td> Add: IGST </td>
+                        <td> 18.00 % </td>
+                        <td> <label id="igst"> 0.00 </label> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Total Tax Amount </td>
+                        <td> <label id="totalTaxAmount"> 0.00 </label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Total Tax after Amount </td>
+                        <td> <label id="totalTaxafterAmount"> 0.00 </label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br>    
+        <div id="st" class="flex-col-end margin-15">
+            <button class="margin-15 width_15" type="submit" form="mainForm" onclick="submitClicked()"> Print </button>
+        </div>
+        
+    
+         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="jsapi.js">
+        </script>
+    </body>
+</html>
